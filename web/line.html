@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts 折线图</title>
+    <script src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小(宽高)的DOM -->
+    <div id="main" style="width: 1000px;height: 700px"></div>
+    <script type="application/javascript">
+        //基于准备好的dom,初始化echarts实例
+        var myChart = echarts.init(document.getElementById("main"));
+        var option = null;
+
+        //加载数据中
+        myChart.showLoading();
+        var xAixs = [];
+        var yAixs = [];
+        var y2Aixs = [];
+        $.get('/json/data2.json').done(function (data) {
+            myChart.hideLoading();
+            console.log(data.data);
+            for(var i=0;i< data.data.acList.length;i++){
+                xAixs.push(data.data.acList[i].DAY);
+                yAixs.push(data.data.acList[i].ACTUAL_VALUE);
+                y2Aixs.push(data.data.planList[i].TARGET_VALUE);
+            }
+            console.log(xAixs);
+            console.log(yAixs);
+            console.log(y2Aixs);
+
+            option = {
+                title: {
+                    text: '关键指标折线图',
+                    subtext: '练手'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['实际值', '目标值']
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    data: xAixs
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name:'实际值',
+                        type:'line',
+                        step: 'start',
+                        data:yAixs
+                    },
+                    {
+                        name:'目标值',
+                        type:'line',
+                        step: 'middle',
+                        data:y2Aixs
+                    }
+                ]
+            };
+            if (option && typeof option === "object") {
+                myChart.setOption(option, true);
+            }
+        });
+
+    </script>
+</body>
+</html>

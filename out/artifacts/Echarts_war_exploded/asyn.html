@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ECharts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.2/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小(宽高)的DOM -->
+    <div id="main" style="width: 600px;height: 400px"></div>
+    <script type="application/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+        // 显示标题，图例和空的坐标轴
+        myChart.setOption({
+            title: {
+                text: '异步数据加载示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: []
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: []
+            }]
+        });
+
+        //加载数据中
+        myChart.showLoading();
+        // 异步加载数据
+        $.get('/json/data.json').done(function (data) {
+            myChart.hideLoading();
+            // 填入数据
+            console.dir(data);
+            myChart.setOption({
+                xAxis: {
+                    data: data.categories
+                },
+                series: [{
+                    // 根据名字对应到相应的系列
+                    name: '销量',
+                    data: data.data
+                }]
+            });
+        });
+    </script>
+</body>
+</html>

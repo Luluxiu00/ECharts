@@ -1,0 +1,258 @@
+{
+  "message": "成功",
+  "success": 1,
+  "data": {
+    "acList": [
+      {
+        "ACTUAL_VALUE": " 71.76",
+        "DAY": "06-17"
+      },
+      {
+        "ACTUAL_VALUE": " 63.13",
+        "DAY": "06-18"
+      },
+      {
+        "ACTUAL_VALUE": " 89.77",
+        "DAY": "06-19"
+      },
+      {
+        "ACTUAL_VALUE": " 92.23",
+        "DAY": "06-20"
+      },
+      {
+        "ACTUAL_VALUE": " 93.30",
+        "DAY": "06-21"
+      },
+      {
+        "ACTUAL_VALUE": " 91.81",
+        "DAY": "06-22"
+      },
+      {
+        "ACTUAL_VALUE": " 92.42",
+        "DAY": "06-23"
+      },
+      {
+        "ACTUAL_VALUE": " 69.61",
+        "DAY": "06-24"
+      },
+      {
+        "ACTUAL_VALUE": " 63.36",
+        "DAY": "06-25"
+      },
+      {
+        "ACTUAL_VALUE": " 92.42",
+        "DAY": "06-26"
+      },
+      {
+        "ACTUAL_VALUE": " 93.18",
+        "DAY": "06-27"
+      },
+      {
+        "ACTUAL_VALUE": " 94.46",
+        "DAY": "06-28"
+      },
+      {
+        "ACTUAL_VALUE": " 93.92",
+        "DAY": "06-29"
+      },
+      {
+        "ACTUAL_VALUE": " 92.63",
+        "DAY": "06-30"
+      },
+      {
+        "ACTUAL_VALUE": " 69.55",
+        "DAY": "07-01"
+      },
+      {
+        "ACTUAL_VALUE": " 62.85",
+        "DAY": "07-02"
+      },
+      {
+        "ACTUAL_VALUE": " 91.47",
+        "DAY": "07-03"
+      },
+      {
+        "ACTUAL_VALUE": " 93.92",
+        "DAY": "07-04"
+      },
+      {
+        "ACTUAL_VALUE": " 93.14",
+        "DAY": "07-05"
+      },
+      {
+        "ACTUAL_VALUE": " 92.51",
+        "DAY": "07-06"
+      },
+      {
+        "ACTUAL_VALUE": " 88.60",
+        "DAY": "07-07"
+      },
+      {
+        "ACTUAL_VALUE": " 68.62",
+        "DAY": "07-08"
+      },
+      {
+        "ACTUAL_VALUE": " 61.59",
+        "DAY": "07-09"
+      },
+      {
+        "ACTUAL_VALUE": " 90.66",
+        "DAY": "07-10"
+      },
+      {
+        "ACTUAL_VALUE": " 93.46",
+        "DAY": "07-11"
+      },
+      {
+        "ACTUAL_VALUE": " 93.19",
+        "DAY": "07-12"
+      },
+      {
+        "ACTUAL_VALUE": " 93.52",
+        "DAY": "07-13"
+      },
+      {
+        "ACTUAL_VALUE": " 92.24",
+        "DAY": "07-14"
+      },
+      {
+        "ACTUAL_VALUE": " 66.87",
+        "DAY": "07-15"
+      },
+      {
+        "ACTUAL_VALUE": " 59.08",
+        "DAY": "07-16"
+      },
+      {
+        "ACTUAL_VALUE": "",
+        "DAY": "07-17"
+      }
+    ],
+    "planList": [
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-17"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-18"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-19"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-20"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-21"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-22"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-23"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-24"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-25"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-26"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-27"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-28"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-29"
+      },
+      {
+        "TARGET_VALUE": " 71.47",
+        "DAY": "06-30"
+      },
+      {
+        "TARGET_VALUE": null,
+        "DAY": "07-01"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-02"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-03"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-04"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-05"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-06"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-07"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-08"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-09"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-10"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-11"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-12"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-13"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-14"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-15"
+      },
+      {
+        "TARGET_VALUE": " 69.98",
+        "DAY": "07-16"
+      },
+      {
+        "TARGET_VALUE": "",
+        "DAY": "07-17"
+      }
+    ]
+  }
+}
